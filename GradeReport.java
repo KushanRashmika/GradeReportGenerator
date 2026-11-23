@@ -93,7 +93,7 @@ public class GradeReport {
         }
     }
 
-    public void reportGenerator(String filePath) throws IOException {
+    public String reportGenerator(String filePath) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write("---------- Final Report ----------\n\n");
             writer.write(String.format("%-10s | %-10s | %-10s%n", "Name", "Average", "Grade"));
@@ -112,6 +112,8 @@ public class GradeReport {
             }else{
                 writer.write("\n\n** No errors have been found!");
             }
+
+            return "Report Generation Successfully";
         }
     }
 
@@ -123,7 +125,7 @@ public class GradeReport {
                 }
                 return true;
             }else{
-                writer.nullWriter();
+                Writer.nullWriter();
                 return false;
             }
         }

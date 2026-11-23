@@ -10,7 +10,7 @@ public class Main {
         try {
             report.fileReader(sourceFile);
             report.processor();
-            report.reportGenerator(destinationFile);
+            System.out.println(report.reportGenerator(destinationFile));
         } catch (FileNotFoundException e) {
             System.out.println("File not found!");
         } catch (IOException e) {

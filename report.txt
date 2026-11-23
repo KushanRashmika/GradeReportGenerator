@@ -1,0 +1,12 @@
+---------- Final Report ----------
+
+Name       | Average    | Grade     
+-------------------------------
+Amira      | 86.33      | B         
+Ben        | 64.33      | D         
+Chloe      | 94.67      | A         
+
+** Class Average: 81.78
+** Top Student: "Chloe"
+
+** No errors have been found!
